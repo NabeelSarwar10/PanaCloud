@@ -31,5 +31,5 @@ jobs:
       - name: Installing surge
         run:  npm install --global surge
       - name: deploying using surge
-        run:  surge ./ efficient-kick.surge.sh --token $ {{ secret.Surge_Token }}
+        run:  surge ./ efficient-kick.surge.sh --token $ {{ secret.SURGE_TOKEN }}
       
