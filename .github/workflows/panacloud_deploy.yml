@@ -31,6 +31,5 @@ jobs:
       - name: Installing surge
         run:  npm install --global surge
       - name: deploying using surge
-        run:  surge ./http://efficient-kick.surge.sh --token $ {{ secret.Surge_Token }}
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run:  surge ./ efficient-kick.surge.sh --token $ {{ secret.Surge_Token }}
+      
